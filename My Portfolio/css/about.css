@@ -1,0 +1,202 @@
+/* ABOUT SECTION */
+
+#about {
+    height: calc(100vh - 150px);
+    background: linear-gradient(to bottom, #040453, #021029);
+    color: #fff;
+}
+
+.about-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.canvas {
+    height: 50%;
+    width: 70%;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #03122d;
+    border-radius: 15px;
+    border: 1.5px solid aqua;
+    opacity: 0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.canvas p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+.canvas p .name {
+    margin: 0 0.5rem;
+    font-weight: bold;
+    color: rgb(191, 143, 237);
+}
+
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 2.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #about {
+        padding: 12px;
+    }
+
+    .about-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-container .canvas {
+        width: 100%;
+        height: 55%;
+        margin: 1rem auto;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #about {
+        height: calc(100vh - 100px);
+    }
+
+    .about-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-container .canvas {
+        width: 100%;
+        height: 60%;
+        margin: 1rem auto;
+    }
+
+    .about-container .canvas p {
+        margin: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    #about {
+        height: calc(100vh - 130px);
+    }
+
+    .about-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-container .canvas {
+        width: 100%;
+        height: 65%;
+        margin: 1rem auto;
+    }
+
+    .about-container .canvas p {
+        margin: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #about {
+        height: calc(100vh - 200px);
+    }
+
+    .about-container .canvas {
+        width: 95%;
+        height: 70%;
+        margin: 1.5rem auto;
+    }
+
+    .about-container .canvas p {
+        margin: 1rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #about {
+        height: calc(100vh - 200px);
+    }
+
+    .about-container {
+        width: 100%;
+    }
+
+    .about-container .canvas {
+        width: 100%;
+        height: 40%;
+        margin: 2rem auto;
+    }
+
+    .about-container .canvas p {
+        display: block;
+        margin: 1rem;
+    }
+
+    .canvas p .name {
+        font-weight: 300;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about-container .canvas {
+        width: 100%;
+        height: 60%;
+    }
+}
+
+@media only screen and (max-width: 912px) {
+    #about {
+        height: calc(100vh - 150px);
+        display: flex;
+        align-items: center;
+    }
+
+    .about-container {
+        width: 100%;
+    }
+
+    .about-container .canvas {
+        width: 90%;
+        height: 50%;
+        margin: 2rem auto;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .about-container .canvas {
+        width: 80%;
+    }
+}
